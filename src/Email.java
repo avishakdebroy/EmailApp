@@ -19,7 +19,9 @@ public class Email {
         this.department = setDepartment();
         System.out.println("Department: " + this.department);
 
-        // Method to create a password
+        // Return a password
+        this.password = randomPassword;
+        System.out.println("Your password is: " + this.password);
 
     }
 
