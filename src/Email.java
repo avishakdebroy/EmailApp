@@ -1,3 +1,4 @@
+import java.util.Random;
 import java.util.Scanner;
 
 public class Email {
@@ -17,6 +18,9 @@ public class Email {
         // Return Department
         this.department = setDepartment();
         System.out.println("Department: " + this.department);
+
+        // Method to create a password
+
     }
 
     // Method
@@ -38,4 +42,7 @@ public class Email {
         }
     }
 
+    // Method to create a password
+    private String randomPassword = new Random().ints(10,33,122).collect(StringBuilder::new,
+            StringBuilder::appendCodePoint, StringBuilder::append).toString();
 }
